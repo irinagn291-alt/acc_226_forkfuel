@@ -36,6 +36,7 @@ targets:
       - package: casePaths
         product: CasePaths
       - package: Alamofire
+        product: Alamofire
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.forkfuel.fuel

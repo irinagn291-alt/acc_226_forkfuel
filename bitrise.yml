@@ -51,6 +51,8 @@ workflows:
         - content: |
             #!/bin/bash
             set -euo pipefail
+            defaults write com.apple.dt.Xcode IDESkipMacroFingerprintValidation -bool YES
+            defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES
             echo "$ASC_API_KEY_CONTENT" | base64 -d > "$BITRISE_SOURCE_DIR/AuthKey_${ASC_KEY_ID}.p8"
             ENC_P12="$BITRISE_SOURCE_DIR/gf_import.p12"
             STEP_P12="$BITRISE_SOURCE_DIR/gf_step.p12"
@@ -102,6 +104,7 @@ workflows:
         - api_key_id: "$ASC_KEY_ID"
         - api_key_issuer_id: "$ASC_ISSUER_ID"
         - export_development_team: "$APPLE_TEAM_ID"
+        - xcodebuild_options: "-skipMacroValidation -skipPackagePluginValidation"
         - xcconfig_content: |-
             COMPILER_INDEX_STORE_ENABLE = NO
             CODE_SIGNING_ALLOWED = YES
