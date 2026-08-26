@@ -51,8 +51,12 @@ workflows:
         - content: |
             #!/bin/bash
             set -euo pipefail
-            defaults write com.apple.dt.Xcode IDESkipMacroFingerprintValidation -bool YES
-            defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES
+            defaults write com.apple.dt.Xcode IDESkipMacroFingerprintValidation -bool YES || true
+            defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES || true
+            mkdir -p "$HOME/Library/org.swift.swiftpm/security"
+            if [ -f "$BITRISE_SOURCE_DIR/ci_scripts/macros.json" ]; then
+              cp -f "$BITRISE_SOURCE_DIR/ci_scripts/macros.json" "$HOME/Library/org.swift.swiftpm/security/macros.json"
+            fi
             echo "$ASC_API_KEY_CONTENT" | base64 -d > "$BITRISE_SOURCE_DIR/AuthKey_${ASC_KEY_ID}.p8"
             ENC_P12="$BITRISE_SOURCE_DIR/gf_import.p12"
             STEP_P12="$BITRISE_SOURCE_DIR/gf_step.p12"
