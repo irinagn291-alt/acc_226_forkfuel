@@ -1,0 +1,15 @@
+ForkFuel is a personal food log for athletes who track energy and macros against separate Training and Rest targets. Product nutrition is looked up from Open Food Facts; bundled shelf samples stay available offline.
+
+• Ignition onboarding introduces Training-day mode and writes Training targets (Rest targets are derived automatically)
+• Today's Fuel shows energy and Protein, Carbs and Fat progress against the active day's budget
+• Switch a day between Training and Rest, or browse previous and next days
+• Session Tags pre-tags each of the next 14 days as Training or Rest
+• Fuel Catalog with Search and Scan to find products by name or barcode
+• Portion sets grams with a gram wheel and shows per 100 g and this-portion totals
+• Park the Fuel assigns Pre-Fuel, Refuel, Recovery or Top-Up, eaten today or on a future day
+• Forward Fuel lists food parked across the next 14 days; Eat now moves a planned item to today's eaten log
+• Buy List saves products from Portion; Eat today or Plan ahead promotes them into the log or plan
+• Fuel Goals edits Training and Rest targets, re-runs Ignition, resets all local data, or opens Contact ForkFuel
+• Remove items from the eaten log with confirmation
+
+ForkFuel is a personal food log, not medical advice.

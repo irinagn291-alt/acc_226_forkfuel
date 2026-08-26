@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE4E8E1F750B30B7EC5DC1E5 /* ContactWebSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD85FA8714C73954E6B3EA8C /* ContactWebSheet.swift */; };
+		04A43B99244B94C5E11436F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FC42D783283634AA2112B0 /* AppDelegate.swift */; };
+		DE2D51EEE19ADF3338D8983C /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F8C19A9468D5F471CA946 /* APIConfig.swift */; };
+		00C12B1276468D3FD3CCD022 /* PortionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635FBB1429748F4E3C6751B /* PortionCalculator.swift */; };
+		047BA8028DBCD11E3F55B912 /* FuelSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276FE607F0530896376A6EA /* FuelSlot.swift */; };
+		0574740B4D1D06364155BC18 /* AthleticChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3847E48BC445572BC279FD3 /* AthleticChrome.swift */; };
+		067C110153776BD5B5C79A83 /* NutritionDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5146C88E4C8F2044B594B7 /* NutritionDecodingTests.swift */; };
+		097093DA4A5F288A9562BA69 /* TrainingHorizonFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B09C800D909F7EDECD4116 /* TrainingHorizonFeature.swift */; };
+		0BE3AB273AD0DF5735EFED93 /* MacroTunerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB441C22E1E09CA521FC4A7 /* MacroTunerBridge.swift */; };
+		0E09BC83FB8C306F706B17FE /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 01648F0FBFFAC39214D3418A /* CasePaths */; };
+		1125FE941786BAB0185A2568 /* FuelVaultActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD21CF919C46A4C78ABA15 /* FuelVaultActor.swift */; };
+		1854D621A5E268DD584292DC /* BarcodeScannerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54921FF2FC0A2430BA03377 /* BarcodeScannerBridge.swift */; };
+		2910A08B6DB66DC29545E703 /* BarcodeNormaliser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26431F47D413B15FC1F642 /* BarcodeNormaliser.swift */; };
+		2A976802A74D0F82DD010697 /* PlannerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B35897911A2B28D74D59A /* PlannerFeature.swift */; };
+		2AFFDE8FBC0DC4FDA9FE91A3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1455717A4F31B43387F94627 /* ComposableArchitecture */; };
+		2B86CE9B4063674B3ED06A6B /* FuelIntakeAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FDFEB908D27E81DA7F5997 /* FuelIntakeAggregate.swift */; };
+		366473159F2F200BAEBE9164 /* NutritionGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AE0F012D854B752981593 /* NutritionGateway.swift */; };
+		3965C1347F44912CA027F06A /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = FD30FC2EC54695B67CBFAE01 /* CasePaths */; };
+		3CACD32CB456ADCA65C1CB78 /* CatalogCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060FDDC2E3A40E9F074370F /* CatalogCanvas.swift */; };
+		3D38D33973BC074915B8BDA7 /* PersistenceRoundTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA955F3C60C457D36B30DFE /* PersistenceRoundTripTests.swift */; };
+		3EA4AFA770391CA0D43077E0 /* FuelVaultClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240101AB355575B45BB9D5E7 /* FuelVaultClient.swift */; };
+		4832786BFE825E66211038E8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB0788D7C01D5D911CA3EDA /* ComposableArchitecture */; };
+		4ACF0D8C4BECB20ADFBAFF03 /* ForkFuelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BB7EB94BE9416B479127D /* ForkFuelApp.swift */; };
+		4B0B54E29C32B3579BE6B482 /* AthleticTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5256B6E78A26A76B8391D83 /* AthleticTheme.swift */; };
+		62563C376A4C0110DEA7F362 /* FuelShelfCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E86A60C868BF1E472C75FAE /* FuelShelfCatalog.swift */; };
+		695CE649E12D892280757F1D /* OpenFoodFactsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD122140A5E136A53B877062 /* OpenFoodFactsDTO.swift */; };
+		6B77C05FC11C7BF8594765D7 /* GoalsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FFEB9E330D8C7867E8596 /* GoalsFeature.swift */; };
+		71617251C0EFBF86211B7022 /* TrainingHorizonCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A9A3CFD7B7E584A6F0B6D /* TrainingHorizonCanvas.swift */; };
+		776548F97FB496E0C898E77B /* TodayFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E16D097D8D0724B24D385D /* TodayFeature.swift */; };
+		7E175BB8ED744D34363FB921 /* SlotAssignCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4123728A432ACCCC94D92 /* SlotAssignCanvas.swift */; };
+		84386A1177D733505207A830 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = DB2BB1097397F73BDE9ADC0C /* Dependencies */; };
+		856EF23130DF420206E112F4 /* TrainingDayKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB822EB4D9A8086C19E544 /* TrainingDayKind.swift */; };
+		866FEC6FCBD1CEF63D3849CC /* BarcodeNormaliserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728DE454777A551EAAB106A /* BarcodeNormaliserTests.swift */; };
+		897FB9B09FE2219537D155C5 /* DayBoundaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFBEACBDA6BF16A1ACBF1F1 /* DayBoundaryTests.swift */; };
+		8FBAD897592F07E80D9CEA56 /* SupportClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2735C3DE507271063225B /* SupportClients.swift */; };
+		91526DDE25BFDC7B6A6A5134 /* PortionCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4B65C92F6B2FC9B0A9990 /* PortionCalculatorTests.swift */; };
+		91B45514E9C3236E24757F6F /* DayKeyCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D542F65FE4E27F27C8223 /* DayKeyCalendar.swift */; };
+		940A3438029121A483123E16 /* FuelStoreSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989B6C4566A3881297F5073 /* FuelStoreSchema.swift */; };
+		94129A6F1700183D4451672C /* IgnitionOnboardingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF664AB176306F0AB01FFB /* IgnitionOnboardingCanvas.swift */; };
+		97AE52B2B89E1DDF52D2439F /* TrainingDayPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB1670F25D6EA2D75D83A8 /* TrainingDayPolicy.swift */; };
+		992551099D3E076329E8C092 /* RootCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56067B4969D15B6EBCC64E6 /* RootCanvas.swift */; };
+		A889B3AC661269E5F86A8D28 /* FuelIntakeAggregateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D58BCBA3CA242ACB331BD3B /* FuelIntakeAggregateTests.swift */; };
+		A91412CC8C61F51BEE9EF4F3 /* PlannerCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F612914313560F4A660FD /* PlannerCanvas.swift */; };
+		ADB1E937FC96216B250F577A /* FuelProductSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0231E39D8AE7BE5B755CF /* FuelProductSnapshot.swift */; };
+		AFB9B3DE5CA8404C7C8CBA95 /* SlotAssignFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060A0DC5F8A8729302856BE3 /* SlotAssignFeatureTests.swift */; };
+		AFF1462A5590000853F8AB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9D599FCA86BE67AA1C13FD /* Assets.xcassets */; };
+		B65DA788716D486512C02B3B /* SlotAssignFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7875F9C70DAEBFD78EAFCE9 /* SlotAssignFeature.swift */; };
+		B8766658C842CF6973C1484E /* FuelDetailCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3741358907EFE6D1BF72D2 /* FuelDetailCanvas.swift */; };
+		BD179E8E06F2675FBBDE52BE /* WishShelfCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B358CB07391BC85E613DE87 /* WishShelfCanvas.swift */; };
+		C4CD889BD746A9A96041E908 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 468D6B2B9A5C40480A636C7D /* Dependencies */; };
+		D24B27DFA6A5210AAFC9876B /* TodayCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C818368DD2F7321DAA5DC7 /* TodayCanvas.swift */; };
+		D7B2231BBA328C1FE7C486E3 /* CatalogFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808BC96B831193FD941B7E6 /* CatalogFeature.swift */; };
+		DFECC916263278EAA1D36E77 /* GoalsCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557638D5037038A30474C70B /* GoalsCanvas.swift */; };
+		E208090975B9EBE6A62569DD /* TrainingDayPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6470A2423621020A41A2495 /* TrainingDayPolicyTests.swift */; };
+		E284075418CEB37DFEB0C17D /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC37518C3FE6DBB796EF781 /* RootFeature.swift */; };
+		E3BF214CCD35D9EBC9300A55 /* WishShelfFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703BF69909523CBB7CE818E2 /* WishShelfFeature.swift */; };
+		E4246556158AE4ECCA7E8447 /* WishUniquenessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F1572A23E8E9B37CCB76AA /* WishUniquenessTests.swift */; };
+		E42DD7BB35CDBAD2CA4291ED /* FuelDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED28D032B999FE4162BA181 /* FuelDetailFeature.swift */; };
+		E6D268E93FF17B991FF70E95 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0A26ED3A8EA75F253B005E12 /* PrivacyInfo.xcprivacy */; };
+		E82C9D13EBEAF84E924CB7E3 /* FuelStoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFC1825CF01EC2EA49D7FFB /* FuelStoreModels.swift */; };
+		EE2D517E68EEC3A9431640C5 /* IgnitionOnboardingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB35149709951FFF2ED961 /* IgnitionOnboardingFeature.swift */; };
+		F07FC8C2F3095A185EA2460F /* GramWheelBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6DFC9E8F935EF2070B1AC7 /* GramWheelBridge.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E87D2432445155763DC9C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41DF77284CFB8F1C640C627 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9740C5D6CFB7443E1A39A89C;
+			remoteInfo = ForkFuel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD85FA8714C73954E6B3EA8C /* ContactWebSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWebSheet.swift; sourceTree = "<group>"; };
+		81FC42D783283634AA2112B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A0F8C19A9468D5F471CA946 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		060A0DC5F8A8729302856BE3 /* SlotAssignFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignFeatureTests.swift; sourceTree = "<group>"; };
+		078F612914313560F4A660FD /* PlannerCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerCanvas.swift; sourceTree = "<group>"; };
+		0808BC96B831193FD941B7E6 /* CatalogFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogFeature.swift; sourceTree = "<group>"; };
+		0A26ED3A8EA75F253B005E12 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		0B8BB7EB94BE9416B479127D /* ForkFuelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkFuelApp.swift; sourceTree = "<group>"; };
+		0DAF664AB176306F0AB01FFB /* IgnitionOnboardingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnitionOnboardingCanvas.swift; sourceTree = "<group>"; };
+		0ED28D032B999FE4162BA181 /* FuelDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelDetailFeature.swift; sourceTree = "<group>"; };
+		156A9A3CFD7B7E584A6F0B6D /* TrainingHorizonCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingHorizonCanvas.swift; sourceTree = "<group>"; };
+		1E6DFC9E8F935EF2070B1AC7 /* GramWheelBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GramWheelBridge.swift; sourceTree = "<group>"; };
+		240101AB355575B45BB9D5E7 /* FuelVaultClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelVaultClient.swift; sourceTree = "<group>"; };
+		2728DE454777A551EAAB106A /* BarcodeNormaliserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeNormaliserTests.swift; sourceTree = "<group>"; };
+		2AB441C22E1E09CA521FC4A7 /* MacroTunerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroTunerBridge.swift; sourceTree = "<group>"; };
+		2D58BCBA3CA242ACB331BD3B /* FuelIntakeAggregateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelIntakeAggregateTests.swift; sourceTree = "<group>"; };
+		2DC37518C3FE6DBB796EF781 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
+		2E26431F47D413B15FC1F642 /* BarcodeNormaliser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeNormaliser.swift; sourceTree = "<group>"; };
+		349B35897911A2B28D74D59A /* PlannerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerFeature.swift; sourceTree = "<group>"; };
+		3AFBEACBDA6BF16A1ACBF1F1 /* DayBoundaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBoundaryTests.swift; sourceTree = "<group>"; };
+		3FA955F3C60C457D36B30DFE /* PersistenceRoundTripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceRoundTripTests.swift; sourceTree = "<group>"; };
+		42F0231E39D8AE7BE5B755CF /* FuelProductSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelProductSnapshot.swift; sourceTree = "<group>"; };
+		4635FBB1429748F4E3C6751B /* PortionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionCalculator.swift; sourceTree = "<group>"; };
+		48F1572A23E8E9B37CCB76AA /* WishUniquenessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishUniquenessTests.swift; sourceTree = "<group>"; };
+		4989B6C4566A3881297F5073 /* FuelStoreSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelStoreSchema.swift; sourceTree = "<group>"; };
+		517F95DE4B16E892E02345FA /* ForkFuelTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ForkFuelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		557638D5037038A30474C70B /* GoalsCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsCanvas.swift; sourceTree = "<group>"; };
+		56C818368DD2F7321DAA5DC7 /* TodayCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCanvas.swift; sourceTree = "<group>"; };
+		5DC2735C3DE507271063225B /* SupportClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportClients.swift; sourceTree = "<group>"; };
+		67CD21CF919C46A4C78ABA15 /* FuelVaultActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelVaultActor.swift; sourceTree = "<group>"; };
+		6EFC1825CF01EC2EA49D7FFB /* FuelStoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelStoreModels.swift; sourceTree = "<group>"; };
+		703BF69909523CBB7CE818E2 /* WishShelfFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishShelfFeature.swift; sourceTree = "<group>"; };
+		7B358CB07391BC85E613DE87 /* WishShelfCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishShelfCanvas.swift; sourceTree = "<group>"; };
+		7E5146C88E4C8F2044B594B7 /* NutritionDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionDecodingTests.swift; sourceTree = "<group>"; };
+		8060FDDC2E3A40E9F074370F /* CatalogCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCanvas.swift; sourceTree = "<group>"; };
+		8909AF9862AFBE2C1B117A59 /* ForkFuel.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ForkFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B09C800D909F7EDECD4116 /* TrainingHorizonFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingHorizonFeature.swift; sourceTree = "<group>"; };
+		96E16D097D8D0724B24D385D /* TodayFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFeature.swift; sourceTree = "<group>"; };
+		9E86A60C868BF1E472C75FAE /* FuelShelfCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelShelfCatalog.swift; sourceTree = "<group>"; };
+		A5256B6E78A26A76B8391D83 /* AthleticTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticTheme.swift; sourceTree = "<group>"; };
+		A6470A2423621020A41A2495 /* TrainingDayPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayPolicyTests.swift; sourceTree = "<group>"; };
+		A8FDFEB908D27E81DA7F5997 /* FuelIntakeAggregate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelIntakeAggregate.swift; sourceTree = "<group>"; };
+		AA6FFEB9E330D8C7867E8596 /* GoalsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsFeature.swift; sourceTree = "<group>"; };
+		AB3741358907EFE6D1BF72D2 /* FuelDetailCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelDetailCanvas.swift; sourceTree = "<group>"; };
+		B7875F9C70DAEBFD78EAFCE9 /* SlotAssignFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignFeature.swift; sourceTree = "<group>"; };
+		BDFB822EB4D9A8086C19E544 /* TrainingDayKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayKind.swift; sourceTree = "<group>"; };
+		C3847E48BC445572BC279FD3 /* AthleticChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticChrome.swift; sourceTree = "<group>"; };
+		C54921FF2FC0A2430BA03377 /* BarcodeScannerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerBridge.swift; sourceTree = "<group>"; };
+		D0A4B65C92F6B2FC9B0A9990 /* PortionCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionCalculatorTests.swift; sourceTree = "<group>"; };
+		D1B4123728A432ACCCC94D92 /* SlotAssignCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignCanvas.swift; sourceTree = "<group>"; };
+		D276FE607F0530896376A6EA /* FuelSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSlot.swift; sourceTree = "<group>"; };
+		D56067B4969D15B6EBCC64E6 /* RootCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCanvas.swift; sourceTree = "<group>"; };
+		D9BB35149709951FFF2ED961 /* IgnitionOnboardingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnitionOnboardingFeature.swift; sourceTree = "<group>"; };
+		DB9D599FCA86BE67AA1C13FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEDB1670F25D6EA2D75D83A8 /* TrainingDayPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayPolicy.swift; sourceTree = "<group>"; };
+		F02D542F65FE4E27F27C8223 /* DayKeyCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayKeyCalendar.swift; sourceTree = "<group>"; };
+		FA8AE0F012D854B752981593 /* NutritionGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionGateway.swift; sourceTree = "<group>"; };
+		FD122140A5E136A53B877062 /* OpenFoodFactsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFoodFactsDTO.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AAC75D49D333C35E853FCB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFFDE8FBC0DC4FDA9FE91A3 /* ComposableArchitecture in Frameworks */,
+				84386A1177D733505207A830 /* Dependencies in Frameworks */,
+				0E09BC83FB8C306F706B17FE /* CasePaths in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7000EDC19DDE8B1D005B5C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4832786BFE825E66211038E8 /* ComposableArchitecture in Frameworks */,
+				C4CD889BD746A9A96041E908 /* Dependencies in Frameworks */,
+				3965C1347F44912CA027F06A /* CasePaths in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22EE674CE17C31A19A95A1CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				56ED419642A5F6C9897D8420 /* Catalog */,
+				B64EF1376EAD3E4031B6A1BC /* Goals */,
+				74B70334E094062FF23A54FF /* Planner */,
+				9F2E0A3501FBA55D7471FF88 /* Today */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2640FD86E6D0FEE3CB6684D5 /* ForkFuelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2728DE454777A551EAAB106A /* BarcodeNormaliserTests.swift */,
+				3AFBEACBDA6BF16A1ACBF1F1 /* DayBoundaryTests.swift */,
+				2D58BCBA3CA242ACB331BD3B /* FuelIntakeAggregateTests.swift */,
+				7E5146C88E4C8F2044B594B7 /* NutritionDecodingTests.swift */,
+				3FA955F3C60C457D36B30DFE /* PersistenceRoundTripTests.swift */,
+				D0A4B65C92F6B2FC9B0A9990 /* PortionCalculatorTests.swift */,
+				060A0DC5F8A8729302856BE3 /* SlotAssignFeatureTests.swift */,
+				A6470A2423621020A41A2495 /* TrainingDayPolicyTests.swift */,
+				48F1572A23E8E9B37CCB76AA /* WishUniquenessTests.swift */,
+			);
+			path = ForkFuelTests;
+			sourceTree = "<group>";
+		};
+		56ED419642A5F6C9897D8420 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				C54921FF2FC0A2430BA03377 /* BarcodeScannerBridge.swift */,
+				8060FDDC2E3A40E9F074370F /* CatalogCanvas.swift */,
+				0808BC96B831193FD941B7E6 /* CatalogFeature.swift */,
+				AB3741358907EFE6D1BF72D2 /* FuelDetailCanvas.swift */,
+				0ED28D032B999FE4162BA181 /* FuelDetailFeature.swift */,
+				1E6DFC9E8F935EF2070B1AC7 /* GramWheelBridge.swift */,
+				D1B4123728A432ACCCC94D92 /* SlotAssignCanvas.swift */,
+				B7875F9C70DAEBFD78EAFCE9 /* SlotAssignFeature.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		74B70334E094062FF23A54FF /* Planner */ = {
+			isa = PBXGroup;
+			children = (
+				078F612914313560F4A660FD /* PlannerCanvas.swift */,
+				349B35897911A2B28D74D59A /* PlannerFeature.swift */,
+				156A9A3CFD7B7E584A6F0B6D /* TrainingHorizonCanvas.swift */,
+				90B09C800D909F7EDECD4116 /* TrainingHorizonFeature.swift */,
+				7B358CB07391BC85E613DE87 /* WishShelfCanvas.swift */,
+				703BF69909523CBB7CE818E2 /* WishShelfFeature.swift */,
+			);
+			path = Planner;
+			sourceTree = "<group>";
+		};
+		8B1DFE11FDE557C5209FA3EC = {
+			isa = PBXGroup;
+			children = (
+				C6DC096CDF17833982202E14 /* ForkFuel */,
+				2640FD86E6D0FEE3CB6684D5 /* ForkFuelTests */,
+				D81AFDD205B68223F55A931C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F2E0A3501FBA55D7471FF88 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				56C818368DD2F7321DAA5DC7 /* TodayCanvas.swift */,
+				96E16D097D8D0724B24D385D /* TodayFeature.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		B64EF1376EAD3E4031B6A1BC /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				557638D5037038A30474C70B /* GoalsCanvas.swift */,
+				AA6FFEB9E330D8C7867E8596 /* GoalsFeature.swift */,
+				0DAF664AB176306F0AB01FFB /* IgnitionOnboardingCanvas.swift */,
+				D9BB35149709951FFF2ED961 /* IgnitionOnboardingFeature.swift */,
+				2AB441C22E1E09CA521FC4A7 /* MacroTunerBridge.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		C6DC096CDF17833982202E14 /* ForkFuel */ = {
+			isa = PBXGroup;
+			children = (
+				DB9D599FCA86BE67AA1C13FD /* Assets.xcassets */,
+				0B8BB7EB94BE9416B479127D /* ForkFuelApp.swift */,
+				DD85FA8714C73954E6B3EA8C /* ContactWebSheet.swift */,
+				81FC42D783283634AA2112B0 /* AppDelegate.swift */,
+				2A0F8C19A9468D5F471CA946 /* APIConfig.swift */,
+				0A26ED3A8EA75F253B005E12 /* PrivacyInfo.xcprivacy */,
+				D56067B4969D15B6EBCC64E6 /* RootCanvas.swift */,
+				2DC37518C3FE6DBB796EF781 /* RootFeature.swift */,
+				FC9B1D64056AFA8C3C6ED5E2 /* Core */,
+				22EE674CE17C31A19A95A1CA /* Modules */,
+			);
+			path = ForkFuel;
+			sourceTree = "<group>";
+		};
+		D81AFDD205B68223F55A931C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8909AF9862AFBE2C1B117A59 /* ForkFuel.app */,
+				517F95DE4B16E892E02345FA /* ForkFuelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC9B1D64056AFA8C3C6ED5E2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C3847E48BC445572BC279FD3 /* AthleticChrome.swift */,
+				A5256B6E78A26A76B8391D83 /* AthleticTheme.swift */,
+				2E26431F47D413B15FC1F642 /* BarcodeNormaliser.swift */,
+				F02D542F65FE4E27F27C8223 /* DayKeyCalendar.swift */,
+				A8FDFEB908D27E81DA7F5997 /* FuelIntakeAggregate.swift */,
+				42F0231E39D8AE7BE5B755CF /* FuelProductSnapshot.swift */,
+				9E86A60C868BF1E472C75FAE /* FuelShelfCatalog.swift */,
+				D276FE607F0530896376A6EA /* FuelSlot.swift */,
+				6EFC1825CF01EC2EA49D7FFB /* FuelStoreModels.swift */,
+				4989B6C4566A3881297F5073 /* FuelStoreSchema.swift */,
+				67CD21CF919C46A4C78ABA15 /* FuelVaultActor.swift */,
+				240101AB355575B45BB9D5E7 /* FuelVaultClient.swift */,
+				FA8AE0F012D854B752981593 /* NutritionGateway.swift */,
+				FD122140A5E136A53B877062 /* OpenFoodFactsDTO.swift */,
+				4635FBB1429748F4E3C6751B /* PortionCalculator.swift */,
+				5DC2735C3DE507271063225B /* SupportClients.swift */,
+				BDFB822EB4D9A8086C19E544 /* TrainingDayKind.swift */,
+				EEDB1670F25D6EA2D75D83A8 /* TrainingDayPolicy.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9740C5D6CFB7443E1A39A89C /* ForkFuel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74EB916D649BF55CFD5DBF10 /* Build configuration list for PBXNativeTarget "ForkFuel" */;
+			buildPhases = (
+				75ADD22C6DF1B72885499AE5 /* Sources */,
+				E1D5637663D3FF5AF941CE78 /* Resources */,
+				7000EDC19DDE8B1D005B5C4C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForkFuel;
+			packageProductDependencies = (
+				FD2A64986B9E794CE20D4FBC /* Alamofire */,
+				4DB0788D7C01D5D911CA3EDA /* ComposableArchitecture */,
+				468D6B2B9A5C40480A636C7D /* Dependencies */,
+				FD30FC2EC54695B67CBFAE01 /* CasePaths */,
+			);
+			productName = ForkFuel;
+			productReference = 8909AF9862AFBE2C1B117A59 /* ForkFuel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6207B38E7513A9D2720876F /* ForkFuelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A0BD7D01F367A0250A2B4A /* Build configuration list for PBXNativeTarget "ForkFuelTests" */;
+			buildPhases = (
+				1959BD3E31AF92FE49071E60 /* Sources */,
+				4AAC75D49D333C35E853FCB6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01758458DC68383EF28F7503 /* PBXTargetDependency */,
+			);
+			name = ForkFuelTests;
+			packageProductDependencies = (
+				1455717A4F31B43387F94627 /* ComposableArchitecture */,
+				DB2BB1097397F73BDE9ADC0C /* Dependencies */,
+				01648F0FBFFAC39214D3418A /* CasePaths */,
+			);
+			productName = ForkFuelTests;
+			productReference = 517F95DE4B16E892E02345FA /* ForkFuelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41DF77284CFB8F1C640C627 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9740C5D6CFB7443E1A39A89C = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E4F772A5D4A6337C12D36B58 /* Build configuration list for PBXProject "ForkFuel" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8B1DFE11FDE557C5209FA3EC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E2791954B4DE5F28FF63A0D0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FB27338261C08B25CC113276 /* XCRemoteSwiftPackageReference "swift-case-paths" */,
+				13036713A3CD001D4BE93197 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				0A954D363F6DA5A27473AC06 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D81AFDD205B68223F55A931C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9740C5D6CFB7443E1A39A89C /* ForkFuel */,
+				D6207B38E7513A9D2720876F /* ForkFuelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1D5637663D3FF5AF941CE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF1462A5590000853F8AB2E /* Assets.xcassets in Resources */,
+				E6D268E93FF17B991FF70E95 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1959BD3E31AF92FE49071E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866FEC6FCBD1CEF63D3849CC /* BarcodeNormaliserTests.swift in Sources */,
+				897FB9B09FE2219537D155C5 /* DayBoundaryTests.swift in Sources */,
+				A889B3AC661269E5F86A8D28 /* FuelIntakeAggregateTests.swift in Sources */,
+				067C110153776BD5B5C79A83 /* NutritionDecodingTests.swift in Sources */,
+				3D38D33973BC074915B8BDA7 /* PersistenceRoundTripTests.swift in Sources */,
+				91526DDE25BFDC7B6A6A5134 /* PortionCalculatorTests.swift in Sources */,
+				AFB9B3DE5CA8404C7C8CBA95 /* SlotAssignFeatureTests.swift in Sources */,
+				E208090975B9EBE6A62569DD /* TrainingDayPolicyTests.swift in Sources */,
+				E4246556158AE4ECCA7E8447 /* WishUniquenessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75ADD22C6DF1B72885499AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4E8E1F750B30B7EC5DC1E5 /* ContactWebSheet.swift in Sources */,
+				04A43B99244B94C5E11436F0 /* AppDelegate.swift in Sources */,
+				DE2D51EEE19ADF3338D8983C /* APIConfig.swift in Sources */,
+				0574740B4D1D06364155BC18 /* AthleticChrome.swift in Sources */,
+				4B0B54E29C32B3579BE6B482 /* AthleticTheme.swift in Sources */,
+				2910A08B6DB66DC29545E703 /* BarcodeNormaliser.swift in Sources */,
+				1854D621A5E268DD584292DC /* BarcodeScannerBridge.swift in Sources */,
+				3CACD32CB456ADCA65C1CB78 /* CatalogCanvas.swift in Sources */,
+				D7B2231BBA328C1FE7C486E3 /* CatalogFeature.swift in Sources */,
+				91B45514E9C3236E24757F6F /* DayKeyCalendar.swift in Sources */,
+				4ACF0D8C4BECB20ADFBAFF03 /* ForkFuelApp.swift in Sources */,
+				B8766658C842CF6973C1484E /* FuelDetailCanvas.swift in Sources */,
+				E42DD7BB35CDBAD2CA4291ED /* FuelDetailFeature.swift in Sources */,
+				2B86CE9B4063674B3ED06A6B /* FuelIntakeAggregate.swift in Sources */,
+				ADB1E937FC96216B250F577A /* FuelProductSnapshot.swift in Sources */,
+				62563C376A4C0110DEA7F362 /* FuelShelfCatalog.swift in Sources */,
+				047BA8028DBCD11E3F55B912 /* FuelSlot.swift in Sources */,
+				E82C9D13EBEAF84E924CB7E3 /* FuelStoreModels.swift in Sources */,
+				940A3438029121A483123E16 /* FuelStoreSchema.swift in Sources */,
+				1125FE941786BAB0185A2568 /* FuelVaultActor.swift in Sources */,
+				3EA4AFA770391CA0D43077E0 /* FuelVaultClient.swift in Sources */,
+				DFECC916263278EAA1D36E77 /* GoalsCanvas.swift in Sources */,
+				6B77C05FC11C7BF8594765D7 /* GoalsFeature.swift in Sources */,
+				F07FC8C2F3095A185EA2460F /* GramWheelBridge.swift in Sources */,
+				94129A6F1700183D4451672C /* IgnitionOnboardingCanvas.swift in Sources */,
+				EE2D517E68EEC3A9431640C5 /* IgnitionOnboardingFeature.swift in Sources */,
+				0BE3AB273AD0DF5735EFED93 /* MacroTunerBridge.swift in Sources */,
+				366473159F2F200BAEBE9164 /* NutritionGateway.swift in Sources */,
+				695CE649E12D892280757F1D /* OpenFoodFactsDTO.swift in Sources */,
+				A91412CC8C61F51BEE9EF4F3 /* PlannerCanvas.swift in Sources */,
+				2A976802A74D0F82DD010697 /* PlannerFeature.swift in Sources */,
+				00C12B1276468D3FD3CCD022 /* PortionCalculator.swift in Sources */,
+				992551099D3E076329E8C092 /* RootCanvas.swift in Sources */,
+				E284075418CEB37DFEB0C17D /* RootFeature.swift in Sources */,
+				7E175BB8ED744D34363FB921 /* SlotAssignCanvas.swift in Sources */,
+				B65DA788716D486512C02B3B /* SlotAssignFeature.swift in Sources */,
+				8FBAD897592F07E80D9CEA56 /* SupportClients.swift in Sources */,
+				D24B27DFA6A5210AAFC9876B /* TodayCanvas.swift in Sources */,
+				776548F97FB496E0C898E77B /* TodayFeature.swift in Sources */,
+				856EF23130DF420206E112F4 /* TrainingDayKind.swift in Sources */,
+				97AE52B2B89E1DDF52D2439F /* TrainingDayPolicy.swift in Sources */,
+				71617251C0EFBF86211B7022 /* TrainingHorizonCanvas.swift in Sources */,
+				097093DA4A5F288A9562BA69 /* TrainingHorizonFeature.swift in Sources */,
+				BD179E8E06F2675FBBDE52BE /* WishShelfCanvas.swift in Sources */,
+				E3BF214CCD35D9EBC9300A55 /* WishShelfFeature.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01758458DC68383EF28F7503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9740C5D6CFB7443E1A39A89C /* ForkFuel */;
+			targetProxy = 6E87D2432445155763DC9C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36390DC014B3C00EE42F8E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+		4FADAF7A180105D375FF236C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ForkFuel;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ForkFuel reads barcodes to load food into your training-day plan.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_UIColorName = ffl_background;
+				INFOPLIST_KEY_UILaunchScreen_UIImageName = ffl_Splash;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forkfuel.fuel;
+				PRODUCT_NAME = ForkFuel;
+				SDKROOT = iphoneos;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97E6880A7313C43BA78E3D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ForkFuel;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ForkFuel reads barcodes to load food into your training-day plan.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_UIColorName = ffl_background;
+				INFOPLIST_KEY_UILaunchScreen_UIImageName = ffl_Splash;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forkfuel.fuel;
+				PRODUCT_NAME = ForkFuel;
+				SDKROOT = iphoneos;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A51E27EF3E9079F116828756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forkfuel.fuel.tests;
+				SDKROOT = iphoneos;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForkFuel.app/ForkFuel";
+			};
+			name = Release;
+		};
+		CE95671AF9F97908287953C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		E2E9C81BD710F9F1B03799C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forkfuel.fuel.tests;
+				SDKROOT = iphoneos;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForkFuel.app/ForkFuel";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74EB916D649BF55CFD5DBF10 /* Build configuration list for PBXNativeTarget "ForkFuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97E6880A7313C43BA78E3D32 /* Debug */,
+				4FADAF7A180105D375FF236C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3A0BD7D01F367A0250A2B4A /* Build configuration list for PBXNativeTarget "ForkFuelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E9C81BD710F9F1B03799C3 /* Debug */,
+				A51E27EF3E9079F116828756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4F772A5D4A6337C12D36B58 /* Build configuration list for PBXProject "ForkFuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE95671AF9F97908287953C7 /* Debug */,
+				36390DC014B3C00EE42F8E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2791954B4DE5F28FF63A0D0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			requirement = {
+				kind = revision;
+				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
+			};
+		};
+		0A954D363F6DA5A27473AC06 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = exactVersion;
+				version = 1.17.0;
+			};
+		};
+		13036713A3CD001D4BE93197 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 1.26.1;
+			};
+		};
+		FB27338261C08B25CC113276 /* XCRemoteSwiftPackageReference "swift-case-paths" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-case-paths";
+			requirement = {
+				kind = exactVersion;
+				version = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD2A64986B9E794CE20D4FBC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2791954B4DE5F28FF63A0D0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		01648F0FBFFAC39214D3418A /* CasePaths */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB27338261C08B25CC113276 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePaths;
+		};
+		1455717A4F31B43387F94627 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13036713A3CD001D4BE93197 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		468D6B2B9A5C40480A636C7D /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A954D363F6DA5A27473AC06 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		4DB0788D7C01D5D911CA3EDA /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13036713A3CD001D4BE93197 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		DB2BB1097397F73BDE9ADC0C /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A954D363F6DA5A27473AC06 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		FD30FC2EC54695B67CBFAE01 /* CasePaths */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB27338261C08B25CC113276 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePaths;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E41DF77284CFB8F1C640C627 /* Project object */;
+}

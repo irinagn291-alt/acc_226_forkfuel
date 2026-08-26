@@ -1,0 +1,14 @@
+Initial release of ForkFuel.
+
+• Ignition onboarding with Training target setup
+• Today's Fuel dashboard with energy and macro rings
+• Training-day mode with Training and Rest target sets
+• Fuel Catalog search and barcode scan
+• Portion gram entry with per 100 g and portion totals
+• Park the Fuel slot assignment
+• Forward Fuel 14-day planner
+• Buy List for saved products
+• Session Tags for the next 14 days
+• Fuel Goals target editor with local data reset
+• Offline shelf samples and Open Food Facts lookup
+• Contact ForkFuel support page

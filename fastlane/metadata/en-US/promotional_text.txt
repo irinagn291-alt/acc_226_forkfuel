@@ -1,0 +1,1 @@
+Track session fuel against Training and Rest targets. Search or scan barcodes, park food in Pre-Fuel, Refuel, Recovery or Top-Up slots, and plan the next 14 days.

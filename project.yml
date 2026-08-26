@@ -1,0 +1,94 @@
+name: ForkFuel
+options:
+  bundleIdPrefix: com.forkfuel
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.2"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    SWIFT_ENABLE_EXPLICIT_MODULES: NO
+packages:
+  composableArchitecture:
+    url: https://github.com/pointfreeco/swift-composable-architecture
+    exactVersion: 1.26.1
+  swiftDependencies:
+    url: https://github.com/pointfreeco/swift-dependencies
+    exactVersion: 1.17.0
+  casePaths:
+    url: https://github.com/pointfreeco/swift-case-paths
+    exactVersion: 1.9.2
+  Alamofire:
+    url: https://github.com/wrandecima-bit/Alamofire
+    revision: 7fdd403089757be2ce6991b287c7bef612c8bd04
+targets:
+  ForkFuel:
+    type: application
+    platform: iOS
+    sources:
+      - path: ForkFuel
+    dependencies:
+      - package: composableArchitecture
+        product: ComposableArchitecture
+      - package: swiftDependencies
+        product: Dependencies
+      - package: casePaths
+        product: CasePaths
+      - package: Alamofire
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.forkfuel.fuel
+        PRODUCT_NAME: ForkFuel
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_CFBundleDisplayName: ForkFuel
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_UIColorName: ffl_background
+        INFOPLIST_KEY_UILaunchScreen_UIImageName: ffl_Splash
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UIUserInterfaceStyle: Dark
+        INFOPLIST_KEY_NSCameraUsageDescription: ForkFuel reads barcodes to load food into your training-day plan.
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.healthcare-fitness
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "1.0.0"
+        SWIFT_STRICT_CONCURRENCY: complete
+        SWIFT_ENABLE_EXPLICIT_MODULES: NO
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+  ForkFuelTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ForkFuelTests
+    dependencies:
+      - target: ForkFuel
+      - package: composableArchitecture
+        product: ComposableArchitecture
+      - package: swiftDependencies
+        product: Dependencies
+      - package: casePaths
+        product: CasePaths
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.forkfuel.fuel.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_STRICT_CONCURRENCY: complete
+        SWIFT_ENABLE_EXPLICIT_MODULES: NO
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+schemes:
+  ForkFuel:
+    build:
+      targets:
+        ForkFuel: all
+        ForkFuelTests: [test]
+    test:
+      targets:
+        - ForkFuelTests
