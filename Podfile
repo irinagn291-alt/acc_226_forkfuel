@@ -9,6 +9,7 @@ FileUtils.mkdir_p(dest)
 FileUtils.cp(macros, File.join(dest, "macros.json")) if File.file?(macros)
 
 install! "cocoapods", :integrate_targets => false
+workspace "ForkFuel"
 platform :ios, "17.0"
 target "ForkFuel" do
 end
