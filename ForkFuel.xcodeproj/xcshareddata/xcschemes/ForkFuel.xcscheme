@@ -6,6 +6,28 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       runPostActionsOnFailure = "NO">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Trust Swift macros"
+               scriptText = "defaults write com.apple.dt.Xcode IDESkipMacroFingerprintValidation -bool YES
+defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES
+mkdir -p &quot;${HOME}/Library/org.swift.swiftpm/security&quot;
+cp -f &quot;${SRCROOT}/ci_scripts/macros.json&quot; &quot;${HOME}/Library/org.swift.swiftpm/security/macros.json&quot;
+">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "9740C5D6CFB7443E1A39A89C"
+                     BuildableName = "ForkFuel.app"
+                     BlueprintName = "ForkFuel"
+                     ReferencedContainer = "container:ForkFuel.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -112,5 +134,27 @@
    <ArchiveAction
       buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Trust Swift macros"
+               scriptText = "defaults write com.apple.dt.Xcode IDESkipMacroFingerprintValidation -bool YES
+defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES
+mkdir -p &quot;${HOME}/Library/org.swift.swiftpm/security&quot;
+cp -f &quot;${SRCROOT}/ci_scripts/macros.json&quot; &quot;${HOME}/Library/org.swift.swiftpm/security/macros.json&quot;
+">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "9740C5D6CFB7443E1A39A89C"
+                     BuildableName = "ForkFuel.app"
+                     BlueprintName = "ForkFuel"
+                     ReferencedContainer = "container:ForkFuel.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
    </ArchiveAction>
 </Scheme>
