@@ -12,5 +12,3 @@ install! "cocoapods", :integrate_targets => false
 platform :ios, "17.0"
 target "ForkFuel" do
 end
-
-Kernel.exit(0)
