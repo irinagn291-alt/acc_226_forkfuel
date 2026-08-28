@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7E1A0B4FD2A64986B9E794C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FD2A64986B9E794CE20D4FBC /* Alamofire */; };
-		FE4E8E1F750B30B7EC5DC1E5 /* ContactWebSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD85FA8714C73954E6B3EA8C /* ContactWebSheet.swift */; };
-		04A43B99244B94C5E11436F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FC42D783283634AA2112B0 /* AppDelegate.swift */; };
-		DE2D51EEE19ADF3338D8983C /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F8C19A9468D5F471CA946 /* APIConfig.swift */; };
+		002637025BAAB497C26CBFF5 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FF60322C91CB14A687197 /* APIConfig.swift */; };
 		00C12B1276468D3FD3CCD022 /* PortionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635FBB1429748F4E3C6751B /* PortionCalculator.swift */; };
 		047BA8028DBCD11E3F55B912 /* FuelSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276FE607F0530896376A6EA /* FuelSlot.swift */; };
 		0574740B4D1D06364155BC18 /* AthleticChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3847E48BC445572BC279FD3 /* AthleticChrome.swift */; };
@@ -35,6 +32,7 @@
 		62563C376A4C0110DEA7F362 /* FuelShelfCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E86A60C868BF1E472C75FAE /* FuelShelfCatalog.swift */; };
 		695CE649E12D892280757F1D /* OpenFoodFactsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD122140A5E136A53B877062 /* OpenFoodFactsDTO.swift */; };
 		6B77C05FC11C7BF8594765D7 /* GoalsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FFEB9E330D8C7867E8596 /* GoalsFeature.swift */; };
+		6C60FC0BC82FE70017BD9FF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2890F1063C5E8F5EBE5570 /* AppDelegate.swift */; };
 		71617251C0EFBF86211B7022 /* TrainingHorizonCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A9A3CFD7B7E584A6F0B6D /* TrainingHorizonCanvas.swift */; };
 		776548F97FB496E0C898E77B /* TodayFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E16D097D8D0724B24D385D /* TodayFeature.swift */; };
 		7E175BB8ED744D34363FB921 /* SlotAssignCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4123728A432ACCCC94D92 /* SlotAssignCanvas.swift */; };
@@ -49,6 +47,7 @@
 		94129A6F1700183D4451672C /* IgnitionOnboardingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF664AB176306F0AB01FFB /* IgnitionOnboardingCanvas.swift */; };
 		97AE52B2B89E1DDF52D2439F /* TrainingDayPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB1670F25D6EA2D75D83A8 /* TrainingDayPolicy.swift */; };
 		992551099D3E076329E8C092 /* RootCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56067B4969D15B6EBCC64E6 /* RootCanvas.swift */; };
+		9B5797F85FDEBB9FCCA6B73F /* ContactWebSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87B3ACD36C093317FDB6CE /* ContactWebSheet.swift */; };
 		A889B3AC661269E5F86A8D28 /* FuelIntakeAggregateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D58BCBA3CA242ACB331BD3B /* FuelIntakeAggregateTests.swift */; };
 		A91412CC8C61F51BEE9EF4F3 /* PlannerCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F612914313560F4A660FD /* PlannerCanvas.swift */; };
 		ADB1E937FC96216B250F577A /* FuelProductSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0231E39D8AE7BE5B755CF /* FuelProductSnapshot.swift */; };
@@ -70,6 +69,7 @@
 		E82C9D13EBEAF84E924CB7E3 /* FuelStoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFC1825CF01EC2EA49D7FFB /* FuelStoreModels.swift */; };
 		EE2D517E68EEC3A9431640C5 /* IgnitionOnboardingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB35149709951FFF2ED961 /* IgnitionOnboardingFeature.swift */; };
 		F07FC8C2F3095A185EA2460F /* GramWheelBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6DFC9E8F935EF2070B1AC7 /* GramWheelBridge.swift */; };
+		F838538D77A10E5560926BB8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3E1C1AA10D535AEC6F856A4 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +83,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD85FA8714C73954E6B3EA8C /* ContactWebSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWebSheet.swift; sourceTree = "<group>"; };
-		81FC42D783283634AA2112B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A0F8C19A9468D5F471CA946 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		060A0DC5F8A8729302856BE3 /* SlotAssignFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignFeatureTests.swift; sourceTree = "<group>"; };
 		078F612914313560F4A660FD /* PlannerCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerCanvas.swift; sourceTree = "<group>"; };
 		0808BC96B831193FD941B7E6 /* CatalogFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogFeature.swift; sourceTree = "<group>"; };
@@ -129,14 +126,17 @@
 		AB3741358907EFE6D1BF72D2 /* FuelDetailCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelDetailCanvas.swift; sourceTree = "<group>"; };
 		B7875F9C70DAEBFD78EAFCE9 /* SlotAssignFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignFeature.swift; sourceTree = "<group>"; };
 		BDFB822EB4D9A8086C19E544 /* TrainingDayKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayKind.swift; sourceTree = "<group>"; };
+		BE2890F1063C5E8F5EBE5570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3847E48BC445572BC279FD3 /* AthleticChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticChrome.swift; sourceTree = "<group>"; };
 		C54921FF2FC0A2430BA03377 /* BarcodeScannerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerBridge.swift; sourceTree = "<group>"; };
+		CF3FF60322C91CB14A687197 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		D0A4B65C92F6B2FC9B0A9990 /* PortionCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionCalculatorTests.swift; sourceTree = "<group>"; };
 		D1B4123728A432ACCCC94D92 /* SlotAssignCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignCanvas.swift; sourceTree = "<group>"; };
 		D276FE607F0530896376A6EA /* FuelSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSlot.swift; sourceTree = "<group>"; };
 		D56067B4969D15B6EBCC64E6 /* RootCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCanvas.swift; sourceTree = "<group>"; };
 		D9BB35149709951FFF2ED961 /* IgnitionOnboardingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnitionOnboardingFeature.swift; sourceTree = "<group>"; };
 		DB9D599FCA86BE67AA1C13FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED87B3ACD36C093317FDB6CE /* ContactWebSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWebSheet.swift; sourceTree = "<group>"; };
 		EEDB1670F25D6EA2D75D83A8 /* TrainingDayPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayPolicy.swift; sourceTree = "<group>"; };
 		F02D542F65FE4E27F27C8223 /* DayKeyCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayKeyCalendar.swift; sourceTree = "<group>"; };
 		FA8AE0F012D854B752981593 /* NutritionGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionGateway.swift; sourceTree = "<group>"; };
@@ -158,10 +158,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7E1A0B4FD2A64986B9E794C /* Alamofire in Frameworks */,
 				4832786BFE825E66211038E8 /* ComposableArchitecture in Frameworks */,
 				C4CD889BD746A9A96041E908 /* Dependencies in Frameworks */,
 				3965C1347F44912CA027F06A /* CasePaths in Frameworks */,
+				F838538D77A10E5560926BB8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +256,11 @@
 		C6DC096CDF17833982202E14 /* ForkFuel */ = {
 			isa = PBXGroup;
 			children = (
+				CF3FF60322C91CB14A687197 /* APIConfig.swift */,
+				BE2890F1063C5E8F5EBE5570 /* AppDelegate.swift */,
 				DB9D599FCA86BE67AA1C13FD /* Assets.xcassets */,
+				ED87B3ACD36C093317FDB6CE /* ContactWebSheet.swift */,
 				0B8BB7EB94BE9416B479127D /* ForkFuelApp.swift */,
-				DD85FA8714C73954E6B3EA8C /* ContactWebSheet.swift */,
-				81FC42D783283634AA2112B0 /* AppDelegate.swift */,
-				2A0F8C19A9468D5F471CA946 /* APIConfig.swift */,
 				0A26ED3A8EA75F253B005E12 /* PrivacyInfo.xcprivacy */,
 				D56067B4969D15B6EBCC64E6 /* RootCanvas.swift */,
 				2DC37518C3FE6DBB796EF781 /* RootFeature.swift */,
@@ -321,10 +321,10 @@
 			);
 			name = ForkFuel;
 			packageProductDependencies = (
-				FD2A64986B9E794CE20D4FBC /* Alamofire */,
 				4DB0788D7C01D5D911CA3EDA /* ComposableArchitecture */,
 				468D6B2B9A5C40480A636C7D /* Dependencies */,
 				FD30FC2EC54695B67CBFAE01 /* CasePaths */,
+				C3E1C1AA10D535AEC6F856A4 /* Alamofire */,
 			);
 			productName = ForkFuel;
 			productReference = 8909AF9862AFBE2C1B117A59 /* ForkFuel.app */;
@@ -376,7 +376,7 @@
 			mainGroup = 8B1DFE11FDE557C5209FA3EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				E2791954B4DE5F28FF63A0D0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A2D39F7C1C9DA5F13702E122 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FB27338261C08B25CC113276 /* XCRemoteSwiftPackageReference "swift-case-paths" */,
 				13036713A3CD001D4BE93197 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				0A954D363F6DA5A27473AC06 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
@@ -425,15 +425,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE4E8E1F750B30B7EC5DC1E5 /* ContactWebSheet.swift in Sources */,
-				04A43B99244B94C5E11436F0 /* AppDelegate.swift in Sources */,
-				DE2D51EEE19ADF3338D8983C /* APIConfig.swift in Sources */,
+				002637025BAAB497C26CBFF5 /* APIConfig.swift in Sources */,
+				6C60FC0BC82FE70017BD9FF5 /* AppDelegate.swift in Sources */,
 				0574740B4D1D06364155BC18 /* AthleticChrome.swift in Sources */,
 				4B0B54E29C32B3579BE6B482 /* AthleticTheme.swift in Sources */,
 				2910A08B6DB66DC29545E703 /* BarcodeNormaliser.swift in Sources */,
 				1854D621A5E268DD584292DC /* BarcodeScannerBridge.swift in Sources */,
 				3CACD32CB456ADCA65C1CB78 /* CatalogCanvas.swift in Sources */,
 				D7B2231BBA328C1FE7C486E3 /* CatalogFeature.swift in Sources */,
+				9B5797F85FDEBB9FCCA6B73F /* ContactWebSheet.swift in Sources */,
 				91B45514E9C3236E24757F6F /* DayKeyCalendar.swift in Sources */,
 				4ACF0D8C4BECB20ADFBAFF03 /* ForkFuelApp.swift in Sources */,
 				B8766658C842CF6973C1484E /* FuelDetailCanvas.swift in Sources */,
@@ -549,7 +549,7 @@
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ForkFuel;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -558,9 +558,9 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_UIColorName = ffl_background;
 				INFOPLIST_KEY_UILaunchScreen_UIImageName = ffl_Splash;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,7 +584,7 @@
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ForkFuel;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -593,9 +593,9 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_UIColorName = ffl_background;
 				INFOPLIST_KEY_UILaunchScreen_UIImageName = ffl_Splash;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -752,14 +752,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E2791954B4DE5F28FF63A0D0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
-			requirement = {
-				kind = revision;
-				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
-			};
-		};
 		0A954D363F6DA5A27473AC06 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
@@ -776,6 +768,14 @@
 				version = 1.26.1;
 			};
 		};
+		A2D39F7C1C9DA5F13702E122 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			requirement = {
+				kind = revision;
+				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
+			};
+		};
 		FB27338261C08B25CC113276 /* XCRemoteSwiftPackageReference "swift-case-paths" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-case-paths";
@@ -787,11 +787,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FD2A64986B9E794CE20D4FBC /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E2791954B4DE5F28FF63A0D0 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		01648F0FBFFAC39214D3418A /* CasePaths */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FB27338261C08B25CC113276 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
@@ -811,6 +806,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 13036713A3CD001D4BE93197 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		C3E1C1AA10D535AEC6F856A4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2D39F7C1C9DA5F13702E122 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		DB2BB1097397F73BDE9ADC0C /* Dependencies */ = {
 			isa = XCSwiftPackageProductDependency;
