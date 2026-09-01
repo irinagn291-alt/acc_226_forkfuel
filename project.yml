@@ -45,7 +45,7 @@ targets:
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.healthcare-fitness
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1,2"
-        CURRENT_PROJECT_VERSION: 2
+        CURRENT_PROJECT_VERSION: 4
         MARKETING_VERSION: "1.0.1"
         SWIFT_STRICT_CONCURRENCY: complete
         SWIFT_ENABLE_EXPLICIT_MODULES: NO
