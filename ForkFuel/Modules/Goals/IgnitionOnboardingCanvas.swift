@@ -125,7 +125,13 @@ struct IgnitionOnboardingCanvas: View {
         .tag(3)
     }
 
-    private func slider(_ name: String, value: Double, range: ClosedRange<Double>, suffix: String, send: @escaping (Double) -> Void) -> some View {
+    private func slider(
+        _ name: String,
+        value: Double,
+        range: ClosedRange<Double>,
+        suffix: String,
+        onChange: @escaping @MainActor (Double) -> Void
+    ) -> some View {
         VStack(alignment: .leading, spacing: AthleticSpace.x(0.5)) {
             HStack {
                 Text(name)
@@ -140,7 +146,7 @@ struct IgnitionOnboardingCanvas: View {
                 value: value,
                 range: range,
                 accessibilityName: name,
-                onChange: send
+                onChange: onChange
             )
             .frame(height: AthleticSpace.tap)
         }

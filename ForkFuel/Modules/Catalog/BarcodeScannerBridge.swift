@@ -83,7 +83,10 @@ struct BarcodeScannerBridge: UIViewControllerRepresentable {
             }
             lastPayload = payload
             lastStamp = now
-            onPayload(payload)
+            let captured = payload
+            Task { @MainActor in
+                self.onPayload(captured)
+            }
         }
     }
 }

@@ -1,15 +1,16 @@
 import SwiftUI
 import UIKit
 
-/// Native slider. Reports live values back to the feature.
+/// Native slider. Coordinator stays on the main actor so UISlider.value is legal under Swift 6.
+@MainActor
 struct MacroTunerBridge: UIViewRepresentable {
     var value: Double
     var range: ClosedRange<Double>
     var accessibilityName: String
-    var onChange: (Double) -> Void
+    var onChange: @MainActor (Double) -> Void
 
     func makeCoordinator() -> Coordinator {
-        Coordinator(onChange: onChange)
+        Coordinator()
     }
 
     func makeUIView(context: Context) -> UISlider {
@@ -20,6 +21,7 @@ struct MacroTunerBridge: UIViewRepresentable {
         slider.tintColor = UIColor(named: "ffl_accent")
         slider.accessibilityLabel = accessibilityName
         slider.addTarget(context.coordinator, action: #selector(Coordinator.changed(_:)), for: .valueChanged)
+        context.coordinator.onChange = onChange
         return slider
     }
 
@@ -34,13 +36,11 @@ struct MacroTunerBridge: UIViewRepresentable {
         slider.accessibilityValue = AthleticNumbers.macroGrams(value)
     }
 
+    @MainActor
     final class Coordinator: NSObject {
-        var onChange: (Double) -> Void
+        var onChange: @MainActor (Double) -> Void = { _ in }
 
-        init(onChange: @escaping (Double) -> Void) {
-            self.onChange = onChange
-        }
-
+        @MainActor
         @objc func changed(_ slider: UISlider) {
             onChange(Double(slider.value))
         }

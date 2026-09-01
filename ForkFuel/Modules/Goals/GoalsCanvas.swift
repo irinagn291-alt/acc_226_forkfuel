@@ -102,7 +102,13 @@ struct GoalsCanvas: View {
         .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
     }
 
-    private func tuner(_ name: String, value: Double, range: ClosedRange<Double>, format: String, send: @escaping (Double) -> Void) -> some View {
+    private func tuner(
+        _ name: String,
+        value: Double,
+        range: ClosedRange<Double>,
+        format: String,
+        onChange: @escaping @MainActor (Double) -> Void
+    ) -> some View {
         VStack(alignment: .leading, spacing: AthleticSpace.x(0.5)) {
             HStack {
                 Text(name)
@@ -118,7 +124,7 @@ struct GoalsCanvas: View {
                 value: value,
                 range: range,
                 accessibilityName: name,
-                onChange: send
+                onChange: onChange
             )
             .frame(height: AthleticSpace.tap)
         }

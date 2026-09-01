@@ -161,7 +161,7 @@ struct RootFeature {
             case .path(.element(id: _, action: .goals(.resetDone))):
                 return .send(.today(.refreshRequested))
 
-            case let .path(.element(id: _, action: .ignition(.finished))):
+            case .path(.element(id: _, action: .ignition(.finished))):
                 state.ignitionComplete = true
                 _ = state.path.popLast()
                 return .send(.today(.refreshRequested))
