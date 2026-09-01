@@ -17,6 +17,7 @@
 		0E09BC83FB8C306F706B17FE /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 01648F0FBFFAC39214D3418A /* CasePaths */; };
 		1125FE941786BAB0185A2568 /* FuelVaultActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD21CF919C46A4C78ABA15 /* FuelVaultActor.swift */; };
 		1854D621A5E268DD584292DC /* BarcodeScannerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54921FF2FC0A2430BA03377 /* BarcodeScannerBridge.swift */; };
+		23CAEAC111A664BDD24B3740 /* FuelCitationCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C2A364BAC955607F3EF5F /* FuelCitationCanvas.swift */; };
 		2910A08B6DB66DC29545E703 /* BarcodeNormaliser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26431F47D413B15FC1F642 /* BarcodeNormaliser.swift */; };
 		2A976802A74D0F82DD010697 /* PlannerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B35897911A2B28D74D59A /* PlannerFeature.swift */; };
 		2AFFDE8FBC0DC4FDA9FE91A3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1455717A4F31B43387F94627 /* ComposableArchitecture */; };
@@ -57,6 +58,7 @@
 		B8766658C842CF6973C1484E /* FuelDetailCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3741358907EFE6D1BF72D2 /* FuelDetailCanvas.swift */; };
 		BD179E8E06F2675FBBDE52BE /* WishShelfCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B358CB07391BC85E613DE87 /* WishShelfCanvas.swift */; };
 		C4CD889BD746A9A96041E908 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 468D6B2B9A5C40480A636C7D /* Dependencies */; };
+		C4D151C181B80EEBE8FCA6B8 /* FuelCitationCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB36A08E8FB2FF94306CC65 /* FuelCitationCatalogTests.swift */; };
 		D24B27DFA6A5210AAFC9876B /* TodayCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C818368DD2F7321DAA5DC7 /* TodayCanvas.swift */; };
 		D7B2231BBA328C1FE7C486E3 /* CatalogFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808BC96B831193FD941B7E6 /* CatalogFeature.swift */; };
 		DFECC916263278EAA1D36E77 /* GoalsCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557638D5037038A30474C70B /* GoalsCanvas.swift */; };
@@ -67,6 +69,7 @@
 		E42DD7BB35CDBAD2CA4291ED /* FuelDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED28D032B999FE4162BA181 /* FuelDetailFeature.swift */; };
 		E6D268E93FF17B991FF70E95 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0A26ED3A8EA75F253B005E12 /* PrivacyInfo.xcprivacy */; };
 		E82C9D13EBEAF84E924CB7E3 /* FuelStoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFC1825CF01EC2EA49D7FFB /* FuelStoreModels.swift */; };
+		EDA4D834C09D13D2314137A0 /* FuelCitationCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660903D1440552D0C7EEE55 /* FuelCitationCatalog.swift */; };
 		EE2D517E68EEC3A9431640C5 /* IgnitionOnboardingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB35149709951FFF2ED961 /* IgnitionOnboardingFeature.swift */; };
 		F07FC8C2F3095A185EA2460F /* GramWheelBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6DFC9E8F935EF2070B1AC7 /* GramWheelBridge.swift */; };
 		F838538D77A10E5560926BB8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3E1C1AA10D535AEC6F856A4 /* Alamofire */; };
@@ -91,6 +94,7 @@
 		0DAF664AB176306F0AB01FFB /* IgnitionOnboardingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnitionOnboardingCanvas.swift; sourceTree = "<group>"; };
 		0ED28D032B999FE4162BA181 /* FuelDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelDetailFeature.swift; sourceTree = "<group>"; };
 		156A9A3CFD7B7E584A6F0B6D /* TrainingHorizonCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingHorizonCanvas.swift; sourceTree = "<group>"; };
+		1CB36A08E8FB2FF94306CC65 /* FuelCitationCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCitationCatalogTests.swift; sourceTree = "<group>"; };
 		1E6DFC9E8F935EF2070B1AC7 /* GramWheelBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GramWheelBridge.swift; sourceTree = "<group>"; };
 		240101AB355575B45BB9D5E7 /* FuelVaultClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelVaultClient.swift; sourceTree = "<group>"; };
 		2728DE454777A551EAAB106A /* BarcodeNormaliserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeNormaliserTests.swift; sourceTree = "<group>"; };
@@ -124,11 +128,13 @@
 		A8FDFEB908D27E81DA7F5997 /* FuelIntakeAggregate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelIntakeAggregate.swift; sourceTree = "<group>"; };
 		AA6FFEB9E330D8C7867E8596 /* GoalsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsFeature.swift; sourceTree = "<group>"; };
 		AB3741358907EFE6D1BF72D2 /* FuelDetailCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelDetailCanvas.swift; sourceTree = "<group>"; };
+		B660903D1440552D0C7EEE55 /* FuelCitationCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCitationCatalog.swift; sourceTree = "<group>"; };
 		B7875F9C70DAEBFD78EAFCE9 /* SlotAssignFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignFeature.swift; sourceTree = "<group>"; };
 		BDFB822EB4D9A8086C19E544 /* TrainingDayKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDayKind.swift; sourceTree = "<group>"; };
 		BE2890F1063C5E8F5EBE5570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3847E48BC445572BC279FD3 /* AthleticChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticChrome.swift; sourceTree = "<group>"; };
 		C54921FF2FC0A2430BA03377 /* BarcodeScannerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerBridge.swift; sourceTree = "<group>"; };
+		C76C2A364BAC955607F3EF5F /* FuelCitationCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCitationCanvas.swift; sourceTree = "<group>"; };
 		CF3FF60322C91CB14A687197 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		D0A4B65C92F6B2FC9B0A9990 /* PortionCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionCalculatorTests.swift; sourceTree = "<group>"; };
 		D1B4123728A432ACCCC94D92 /* SlotAssignCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignCanvas.swift; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 			children = (
 				2728DE454777A551EAAB106A /* BarcodeNormaliserTests.swift */,
 				3AFBEACBDA6BF16A1ACBF1F1 /* DayBoundaryTests.swift */,
+				1CB36A08E8FB2FF94306CC65 /* FuelCitationCatalogTests.swift */,
 				2D58BCBA3CA242ACB331BD3B /* FuelIntakeAggregateTests.swift */,
 				7E5146C88E4C8F2044B594B7 /* NutritionDecodingTests.swift */,
 				3FA955F3C60C457D36B30DFE /* PersistenceRoundTripTests.swift */,
@@ -286,6 +293,8 @@
 				A5256B6E78A26A76B8391D83 /* AthleticTheme.swift */,
 				2E26431F47D413B15FC1F642 /* BarcodeNormaliser.swift */,
 				F02D542F65FE4E27F27C8223 /* DayKeyCalendar.swift */,
+				C76C2A364BAC955607F3EF5F /* FuelCitationCanvas.swift */,
+				B660903D1440552D0C7EEE55 /* FuelCitationCatalog.swift */,
 				A8FDFEB908D27E81DA7F5997 /* FuelIntakeAggregate.swift */,
 				42F0231E39D8AE7BE5B755CF /* FuelProductSnapshot.swift */,
 				9E86A60C868BF1E472C75FAE /* FuelShelfCatalog.swift */,
@@ -411,6 +420,7 @@
 			files = (
 				866FEC6FCBD1CEF63D3849CC /* BarcodeNormaliserTests.swift in Sources */,
 				897FB9B09FE2219537D155C5 /* DayBoundaryTests.swift in Sources */,
+				C4D151C181B80EEBE8FCA6B8 /* FuelCitationCatalogTests.swift in Sources */,
 				A889B3AC661269E5F86A8D28 /* FuelIntakeAggregateTests.swift in Sources */,
 				067C110153776BD5B5C79A83 /* NutritionDecodingTests.swift in Sources */,
 				3D38D33973BC074915B8BDA7 /* PersistenceRoundTripTests.swift in Sources */,
@@ -436,6 +446,8 @@
 				9B5797F85FDEBB9FCCA6B73F /* ContactWebSheet.swift in Sources */,
 				91B45514E9C3236E24757F6F /* DayKeyCalendar.swift in Sources */,
 				4ACF0D8C4BECB20ADFBAFF03 /* ForkFuelApp.swift in Sources */,
+				23CAEAC111A664BDD24B3740 /* FuelCitationCanvas.swift in Sources */,
+				EDA4D834C09D13D2314137A0 /* FuelCitationCatalog.swift in Sources */,
 				B8766658C842CF6973C1484E /* FuelDetailCanvas.swift in Sources */,
 				E42DD7BB35CDBAD2CA4291ED /* FuelDetailFeature.swift in Sources */,
 				2B86CE9B4063674B3ED06A6B /* FuelIntakeAggregate.swift in Sources */,
@@ -549,7 +561,7 @@
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ForkFuel;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -566,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.forkfuel.fuel;
 				PRODUCT_NAME = ForkFuel;
 				SDKROOT = iphoneos;
@@ -584,7 +596,7 @@
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ForkFuel;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -601,7 +613,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.forkfuel.fuel;
 				PRODUCT_NAME = ForkFuel;
 				SDKROOT = iphoneos;
