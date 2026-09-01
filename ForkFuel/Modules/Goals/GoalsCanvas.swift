@@ -102,7 +102,7 @@ struct GoalsCanvas: View {
         .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
     }
 
-    private func tuner(_ name: String, value: Double, range: ClosedRange<Double>, format: String, send: @escaping @Sendable (Double) -> Void) -> some View {
+    private func tuner(_ name: String, value: Double, range: ClosedRange<Double>, format: String, send: @escaping (Double) -> Void) -> some View {
         VStack(alignment: .leading, spacing: AthleticSpace.x(0.5)) {
             HStack {
                 Text(name)
@@ -115,9 +115,10 @@ struct GoalsCanvas: View {
                     .layoutPriority(1)
             }
             MacroTunerBridge(
-                value: Binding(get: { value }, set: send),
+                value: value,
                 range: range,
-                accessibilityName: name
+                accessibilityName: name,
+                onChange: send
             )
             .frame(height: AthleticSpace.tap)
         }

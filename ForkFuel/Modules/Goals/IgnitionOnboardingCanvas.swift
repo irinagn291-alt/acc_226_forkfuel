@@ -125,7 +125,7 @@ struct IgnitionOnboardingCanvas: View {
         .tag(3)
     }
 
-    private func slider(_ name: String, value: Double, range: ClosedRange<Double>, suffix: String, send: @escaping @Sendable (Double) -> Void) -> some View {
+    private func slider(_ name: String, value: Double, range: ClosedRange<Double>, suffix: String, send: @escaping (Double) -> Void) -> some View {
         VStack(alignment: .leading, spacing: AthleticSpace.x(0.5)) {
             HStack {
                 Text(name)
@@ -136,8 +136,13 @@ struct IgnitionOnboardingCanvas: View {
                     .font(AthleticTypeScale.caption())
                     .foregroundStyle(AthleticPalette.accent)
             }
-            MacroTunerBridge(value: Binding(get: { value }, set: send), range: range, accessibilityName: name)
-                .frame(height: AthleticSpace.tap)
+            MacroTunerBridge(
+                value: value,
+                range: range,
+                accessibilityName: name,
+                onChange: send
+            )
+            .frame(height: AthleticSpace.tap)
         }
     }
 }
