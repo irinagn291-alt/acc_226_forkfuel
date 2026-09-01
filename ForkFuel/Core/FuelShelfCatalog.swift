@@ -59,6 +59,15 @@ enum FuelShelfCatalog {
             carbs: 20.1,
             fat: 0.1
         ),
+        item(
+            barcode: "7394376616037",
+            name: "Oat Milk",
+            brand: "Oatly",
+            kcal: 61,
+            protein: 1.1,
+            carbs: 7.1,
+            fat: 3.0
+        ),
     ]
 
     static func matches(terms: String) -> [FuelProductSnapshot] {
@@ -79,7 +88,7 @@ enum FuelShelfCatalog {
     static func merge(remote: [FuelProductSnapshot], local: [FuelProductSnapshot]) -> [FuelProductSnapshot] {
         var seen = Set<String>()
         var merged: [FuelProductSnapshot] = []
-        for product in remote + local where product.hasUsableName {
+        for product in local + remote where product.hasUsableName {
             if seen.insert(product.barcode).inserted {
                 merged.append(product)
             }

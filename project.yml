@@ -13,12 +13,6 @@ packages:
   composableArchitecture:
     url: https://github.com/pointfreeco/swift-composable-architecture
     exactVersion: 1.26.1
-  swiftDependencies:
-    url: https://github.com/pointfreeco/swift-dependencies
-    exactVersion: 1.17.0
-  casePaths:
-    url: https://github.com/pointfreeco/swift-case-paths
-    exactVersion: 1.9.2
   Alamofire:
     url: https://github.com/wrandecima-bit/Alamofire
     revision: 7fdd403089757be2ce6991b287c7bef612c8bd04
@@ -31,10 +25,6 @@ targets:
     dependencies:
       - package: composableArchitecture
         product: ComposableArchitecture
-      - package: swiftDependencies
-        product: Dependencies
-      - package: casePaths
-        product: CasePaths
       - package: Alamofire
         product: Alamofire
     settings:
@@ -60,8 +50,6 @@ targets:
         SWIFT_STRICT_CONCURRENCY: complete
         SWIFT_ENABLE_EXPLICIT_MODULES: NO
         CODE_SIGN_STYLE: Automatic
-        CODE_SIGNING_REQUIRED: NO
-        CODE_SIGNING_ALLOWED: NO
   ForkFuelTests:
     type: bundle.unit-test
     platform: iOS
@@ -71,10 +59,6 @@ targets:
       - target: ForkFuel
       - package: composableArchitecture
         product: ComposableArchitecture
-      - package: swiftDependencies
-        product: Dependencies
-      - package: casePaths
-        product: CasePaths
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.forkfuel.fuel.tests

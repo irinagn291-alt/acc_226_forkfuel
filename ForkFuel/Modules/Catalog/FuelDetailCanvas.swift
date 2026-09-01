@@ -9,35 +9,16 @@ struct FuelDetailCanvas: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AthleticSpace.x(2)) {
-                ZStack(alignment: .bottomLeading) {
-                    Image("ffl_CardBackdrop")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(height: 160)
-                        .clipped()
-                        .accessibilityHidden(true)
-                    FuelThumbCanvas(product: store.product)
-                        .frame(width: 72, height: 72)
-                        .padding(AthleticSpace.x(2))
-                }
-                .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
-
-                Text(store.product.displayName)
-                    .font(AthleticTypeScale.heading())
-                    .foregroundStyle(AthleticPalette.ink)
-                Text(store.product.brandMark ?? store.product.barcode)
-                    .font(AthleticTypeScale.caption())
-                    .foregroundStyle(AthleticPalette.muted)
-
+                header
                 if store.product.energyIsUnknown {
                     Text("Energy is missing for this item — you can still park the grams.")
                         .font(AthleticTypeScale.body())
                         .foregroundStyle(AthleticPalette.ink)
                         .padding(AthleticSpace.x(1.5))
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .background(AthleticPalette.surface)
                         .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
                 }
-
                 perHundred
                 liveTotals
                 gramsBlock
@@ -62,7 +43,32 @@ struct FuelDetailCanvas: View {
         .background(AthleticPalette.background.ignoresSafeArea())
         .navigationTitle("Portion")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(AthleticPalette.background, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
         .task { await store.send(.task).finish() }
+    }
+
+    private var header: some View {
+        HStack(alignment: .center, spacing: AthleticSpace.x(1.5)) {
+            FuelThumbCanvas(product: store.product)
+                .frame(width: 64, height: 64)
+            VStack(alignment: .leading, spacing: AthleticSpace.x(0.5)) {
+                Text(store.product.displayName)
+                    .font(AthleticTypeScale.heading())
+                    .foregroundStyle(AthleticPalette.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(store.product.brandMark ?? store.product.barcode)
+                    .font(AthleticTypeScale.caption())
+                    .foregroundStyle(AthleticPalette.muted)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(AthleticSpace.x(1.5))
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(AthleticPalette.surface)
+        .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(store.product.displayName), \(store.product.brandMark ?? store.product.barcode)")
     }
 
     private var perHundred: some View {
@@ -122,25 +128,28 @@ struct FuelDetailCanvas: View {
             Text("Grams")
                 .font(AthleticTypeScale.title())
                 .foregroundStyle(AthleticPalette.ink)
-            TextField("Grams", text: Binding(
-                get: { store.gramText },
-                set: { store.send(.gramsTyped($0)) }
-            ))
-            .keyboardType(.decimalPad)
-            .focused($gramsFocused)
-            .font(AthleticTypeScale.body())
-            .foregroundStyle(AthleticPalette.ink)
-            .padding(AthleticSpace.x(1.5))
-            .frame(minHeight: AthleticSpace.tap)
-            .background(AthleticPalette.background)
-            .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
-            .accessibilityLabel("Grams")
-            GramWheelBridge(grams: Binding(
-                get: { store.wheelGrams },
-                set: { store.send(.wheelMoved($0)) }
-            ))
-            .frame(height: 140)
-            .accessibilityLabel("Gram wheel")
+            HStack(spacing: AthleticSpace.x(1)) {
+                gramStep(title: "−", label: "Minus 10 grams") {
+                    store.send(.nudgeGrams(-10))
+                }
+                TextField("Grams", text: Binding(
+                    get: { store.gramText },
+                    set: { store.send(.gramsTyped($0)) }
+                ))
+                .keyboardType(.decimalPad)
+                .focused($gramsFocused)
+                .multilineTextAlignment(.center)
+                .font(AthleticTypeScale.title())
+                .foregroundStyle(AthleticPalette.ink)
+                .padding(.horizontal, AthleticSpace.x(1))
+                .frame(minHeight: AthleticSpace.tap)
+                .background(AthleticPalette.background)
+                .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
+                .accessibilityLabel("Grams")
+                gramStep(title: "+", label: "Plus 10 grams") {
+                    store.send(.nudgeGrams(10))
+                }
+            }
             if let warning = store.gramWarning {
                 Text(warning)
                     .font(AthleticTypeScale.caption())
@@ -150,5 +159,17 @@ struct FuelDetailCanvas: View {
         .padding(AthleticSpace.x(1.5))
         .background(AthleticPalette.surface)
         .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
+    }
+
+    private func gramStep(title: String, label: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Text(title)
+                .font(AthleticTypeScale.title())
+                .foregroundStyle(AthleticPalette.background)
+                .frame(width: AthleticSpace.tap, height: AthleticSpace.tap)
+                .background(AthleticPalette.accent)
+                .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
+        }
+        .accessibilityLabel(label)
     }
 }

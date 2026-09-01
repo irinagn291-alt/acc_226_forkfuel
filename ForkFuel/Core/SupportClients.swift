@@ -52,9 +52,11 @@ struct HapticPulseClient: Sendable {
 
 enum HapticPulseClientKey: DependencyKey {
     static let liveValue = HapticPulseClient {
-        let generator = UINotificationFeedbackGenerator()
-        generator.prepare()
-        generator.notificationOccurred(.success)
+        Task { @MainActor in
+            let generator = UINotificationFeedbackGenerator()
+            generator.prepare()
+            generator.notificationOccurred(.success)
+        }
     }
 
     static let testValue = HapticPulseClient { }

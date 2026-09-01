@@ -1,7 +1,7 @@
 import Foundation
 import ComposableArchitecture
 
-/// Product detail. Grams stay in the reducer; the wheel and field only report values.
+/// Product detail. Grams stay in the reducer; the field and steppers only report values.
 @Reducer
 struct FuelDetailFeature {
     @ObservableState
@@ -9,7 +9,6 @@ struct FuelDetailFeature {
         var product: FuelProductSnapshot
         var grams: Double = 100
         var gramText: String = "100"
-        var wheelGrams: Int = 100
         var alreadyWished: Bool = false
         var isSavingWish: Bool = false
         var gramWarning: String?
@@ -27,7 +26,7 @@ struct FuelDetailFeature {
         case task
         case wishStatus(Bool)
         case gramsTyped(String)
-        case wheelMoved(Int)
+        case nudgeGrams(Int)
         case assignRequested
         case wishTapped
         case wishSettled(Bool)
@@ -62,9 +61,9 @@ struct FuelDetailFeature {
                 }
                 return .none
 
-            case let .wheelMoved(value):
-                applyGrams(Double(value), to: &state)
-                state.gramText = AthleticNumbers.grams(Double(value))
+            case let .nudgeGrams(delta):
+                applyGrams(state.grams + Double(delta), to: &state)
+                state.gramText = AthleticNumbers.grams(state.grams)
                 return .none
 
             case .assignRequested:
@@ -108,7 +107,6 @@ struct FuelDetailFeature {
             return
         }
         state.grams = value
-        state.wheelGrams = min(500, max(1, Int(value.rounded())))
         state.gramWarning = nil
     }
 }

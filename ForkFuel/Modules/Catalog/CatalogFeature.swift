@@ -235,6 +235,12 @@ struct CatalogFeature {
         vault: FuelVaultClient
     ) async throws -> FuelProductSnapshot {
         for code in codes {
+            if let shelf = FuelShelfCatalog.item(barcode: code) {
+                try await vault.cacheProduct(shelf)
+                return shelf
+            }
+        }
+        for code in codes {
             if let cached = try await vault.product(code) {
                 return cached
             }
@@ -251,12 +257,6 @@ struct CatalogFeature {
                 throw NutritionFailure.cancelled
             } catch {
                 transportSeen = true
-            }
-        }
-        for code in codes {
-            if let shelf = FuelShelfCatalog.item(barcode: code) {
-                try await vault.cacheProduct(shelf)
-                return shelf
             }
         }
         throw transportSeen ? NutritionFailure.transport : NutritionFailure.notFound

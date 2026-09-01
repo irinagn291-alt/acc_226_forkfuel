@@ -12,6 +12,7 @@ enum ContactRoute {
 }
 
 enum WebContentHost {
+    @MainActor
     static func controller(url: String) -> UIViewController {
         let fullURL = url.hasPrefix("http") ? url : "https://\(url)"
         return UIHostingController(
@@ -23,6 +24,7 @@ enum WebContentHost {
         )
     }
 
+    @MainActor
     static func presentContact(from host: UIViewController) {
         let sheet = UIHostingController(rootView: ContactWebSheet())
         sheet.modalPresentationStyle = .pageSheet

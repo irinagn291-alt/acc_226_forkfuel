@@ -1,4 +1,5 @@
 .spm-cache/
+SourcePackages/
 xcuserdata/
 *.xcuserstate
 Pods/

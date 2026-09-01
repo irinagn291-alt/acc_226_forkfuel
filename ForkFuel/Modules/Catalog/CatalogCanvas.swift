@@ -204,8 +204,8 @@ struct CatalogCanvas: View {
             }
             .frame(height: 280)
             .clipShape(RoundedRectangle(cornerRadius: AthleticSpace.corner, style: .continuous))
-            .accessibilityLabel("Barcode scanner. Tap a recognised barcode or QR.")
-            Text("Tap the highlighted barcode or QR to load it.")
+            .accessibilityLabel("Barcode scanner. Point at a barcode or QR.")
+            Text("Point at a barcode or QR. It loads when the code is recognised.")
                 .font(AthleticTypeScale.caption())
                 .foregroundStyle(AthleticPalette.muted)
         }

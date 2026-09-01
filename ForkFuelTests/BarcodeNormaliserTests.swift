@@ -40,4 +40,23 @@ final class BarcodeNormaliserTests: XCTestCase {
         XCTAssertTrue(gs1.contains("3013710000201"))
         XCTAssertTrue(BarcodeNormaliser.candidates(from: "(01)03013710000201").contains("3013710000201"))
     }
+
+    func testOatMilkShelfWinsOverRemoteName() {
+        let shelf = FuelShelfCatalog.item(barcode: "7394376616037")
+        XCTAssertEqual(shelf?.displayName, "Oat Milk")
+        let remote = FuelProductSnapshot(
+            barcode: "7394376616037",
+            displayName: "iKaffe",
+            brandMark: "Oatly",
+            energyKcalPerHundred: 61,
+            proteinPerHundred: 1.1,
+            carbsPerHundred: 7.1,
+            fatPerHundred: 3.0,
+            imageRemotePath: nil,
+            bundledAssetKey: nil,
+            lastRefreshAt: Date()
+        )
+        let merged = FuelShelfCatalog.merge(remote: [remote], local: [shelf!])
+        XCTAssertEqual(merged.first?.displayName, "Oat Milk")
+    }
 }
