@@ -43,9 +43,7 @@ struct GoalsCanvas: View {
                     .frame(minHeight: AthleticSpace.tap)
                     .accessibilityLabel("Contact ForkFuel")
 
-                Text("ForkFuel is a personal food log, not medical advice. Nutrition figures come from Open Food Facts, a public database.")
-                    .font(AthleticTypeScale.caption())
-                    .foregroundStyle(AthleticPalette.muted)
+                FuelCitationBoard()
             }
             .padding(AthleticSpace.x(2))
         }

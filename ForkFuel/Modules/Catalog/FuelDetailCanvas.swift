@@ -74,6 +74,13 @@ struct FuelDetailCanvas: View {
             macroLine("Protein", AthleticNumbers.macroGrams(store.product.proteinPerHundred), unit: "g")
             macroLine("Carbs", AthleticNumbers.macroGrams(store.product.carbsPerHundred), unit: "g")
             macroLine("Fat", AthleticNumbers.macroGrams(store.product.fatPerHundred), unit: "g")
+            if let off = FuelCitationCatalog.entries.first(where: { $0.url.host == "world.openfoodfacts.org" }) {
+                Link("Open Food Facts source", destination: off.url)
+                    .font(AthleticTypeScale.caption())
+                    .foregroundStyle(AthleticPalette.accent)
+                    .frame(minHeight: AthleticSpace.tap)
+                    .accessibilityLabel("Open Food Facts source")
+            }
         }
         .padding(AthleticSpace.x(1.5))
         .background(AthleticPalette.surface)

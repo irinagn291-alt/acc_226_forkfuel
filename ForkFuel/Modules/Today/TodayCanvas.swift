@@ -14,6 +14,7 @@ struct TodayCanvas: View {
                 kindToggle
                 energyCard
                 macroRow
+                FuelCitationBoard()
                 AthleticActionButton(title: "Find fuel") {
                     store.send(.openCatalog)
                 }

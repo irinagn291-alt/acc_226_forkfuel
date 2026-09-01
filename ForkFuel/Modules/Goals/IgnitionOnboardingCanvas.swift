@@ -118,6 +118,7 @@ struct IgnitionOnboardingCanvas: View {
                 slider("Fat", value: store.training.fatGrams, range: 20...300, suffix: "g") {
                     store.send(.fatChanged($0))
                 }
+                FuelCitationBoard()
             }
             .padding(AthleticSpace.x(2))
         }

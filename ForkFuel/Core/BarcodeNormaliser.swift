@@ -41,6 +41,9 @@ enum BarcodeNormaliser {
             if run.count == 12 {
                 append(run)
             }
+            if normalised.hasPrefix("0"), normalised.count == 14 {
+                append(String(normalised.dropFirst()))
+            }
             if normalised.hasPrefix("0"), normalised.count == 13 {
                 let trimmed = String(normalised.dropFirst())
                 if trimmed.count == 12 {

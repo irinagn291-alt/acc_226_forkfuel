@@ -13,6 +13,8 @@ struct ForkFuelApp: App {
     var body: some Scene {
         WindowGroup {
             rootView
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(AthleticPalette.background.ignoresSafeArea())
                 .onAppear { performRegistration() }
         }
     }

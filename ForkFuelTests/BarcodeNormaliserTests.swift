@@ -24,4 +24,20 @@ final class BarcodeNormaliserTests: XCTestCase {
         XCTAssertNil(BarcodeNormaliser.firstValid(from: "abc-12-xyz"))
         XCTAssertTrue(BarcodeNormaliser.candidates(from: "no digits").isEmpty)
     }
+
+    func testQRDigitPayload() {
+        XCTAssertEqual(BarcodeNormaliser.firstValid(from: "7394376616037"), "7394376616037")
+    }
+
+    func testQROpenFoodFactsURL() {
+        let raw = "https://world.openfoodfacts.org/product/3013710000201/rolled-oats"
+        XCTAssertEqual(BarcodeNormaliser.firstValid(from: raw), "3013710000201")
+    }
+
+    func testQRGS1Payload() {
+        let gs1 = BarcodeNormaliser.candidates(from: "https://id.gs1.org/01/03013710000201")
+        XCTAssertTrue(gs1.contains("03013710000201"))
+        XCTAssertTrue(gs1.contains("3013710000201"))
+        XCTAssertTrue(BarcodeNormaliser.candidates(from: "(01)03013710000201").contains("3013710000201"))
+    }
 }
